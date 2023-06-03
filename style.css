@@ -29,10 +29,27 @@ header {
   font-size: .8rem;
 }
 
+.apps {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.wrap .apps:hover {
+  background-color: #303134;
+}
+
 .image {
   height: 32px;
   width: 32px;
-  background-image: url('photo.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #202124;
+  background-color: #ebebeb;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,6 +96,11 @@ header {
   justify-content: space-between;
 }
 
+.search-bar:hover {
+  background-color: #303134;
+  border: none;
+}
+
 .search-bar input {
   border: 1px solid dimgray;
   background-color: #202124;
@@ -105,6 +127,11 @@ header {
   line-height: 35px;
   border: none;
   border-radius: 5px;
+}
+
+.container button:hover {
+  outline: 1px solid #85878c;
+  cursor: pointer;
 }
 
 .container article a{
@@ -150,6 +177,10 @@ footer ul li a {
 footer article {
   padding: 10px 20px;
   margin-left: 10px;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 hr {

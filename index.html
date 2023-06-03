@@ -12,10 +12,10 @@
 <body>
   <header>
     <div class="wrap">
-      <article>Gmail</article>
-      <article>Images</article>
-      <i class="material-icons">apps</i>
-      <div class="image"></div>
+      <a>Gmail</a>
+      <a>Images</a>
+      <div class="apps"><i class="material-icons">apps</i></div>
+      <div class="image"><i class="material-icons">person</i></div>
     </div>
   </header>
   
@@ -24,11 +24,11 @@
     <h1><span class="font-g">G</span>oogl<span class="font-e">e</span></h1>
     <div class="search-bar">
       <i class="material-icons">search</i>
-      <input type="search">
+      <input type="search" id="searchInput" required>
       <i class="material-icons">photo_camera</i>
     </div>
     <div class="button-search">
-    <button>Google Search</button>
+    <button onclick="search()">Google Search</button>
     <button>I'm Feeling Lucky</button>
     </div>
     <article>
@@ -58,5 +58,7 @@
       </div>
     </div>
   </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
