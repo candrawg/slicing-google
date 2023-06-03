@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
   background-color:#202124;
   color: #ebebeb;
   font-family: 'Product Sans',Arial, Helvetica, sans-serif;
@@ -17,7 +17,7 @@ a {
 }
 
 header {
-  height: 50px;
+  height: 10vh;
   padding: 10px;
 }
 
@@ -96,13 +96,13 @@ header {
 }
 
 .container button {
-  height: 40px;
+  height: 35px;
   width: 150px;
   margin: 20px 10px 0px 0px;
   background-color: #303134;
   color: white;
-  font-size: 1rem;
-  line-height: 40px;
+  font-size: .9rem;
+  line-height: 35px;
   border: none;
   border-radius: 5px;
 }
@@ -113,16 +113,19 @@ header {
 }
 
 .container article {
-  color: #85878c;
+  color: #a8aab1;
   font-size: .8rem;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 footer {
   color: #878b8f;
   background-color: #171717;
   font-size: 1rem;
-  margin-top: 240px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 footer ul li{
