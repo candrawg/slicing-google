@@ -18,15 +18,18 @@ a {
 
 header {
   height: 10vh;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 .wrap {
   display: flex;
-  margin-left: 85%;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
   font-size: .8rem;
+}
+
+.margin-right {
+  margin-right: 10px;
 }
 
 .apps {
@@ -58,8 +61,8 @@ header {
 
 .container {
   height: 100%;
-  width: 700px;
-  margin: 0px auto;
+  width: 100%;
+  margin: -20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,7 +85,7 @@ header {
 
 .search-bar {
   height: 45px;
-  width: 600px;
+  width: 580px;
   border-radius: 100px;
   border: 1px solid dimgray;
   background-color: #202124;
@@ -148,7 +151,7 @@ header {
 footer {
   color: #878b8f;
   background-color: #171717;
-  font-size: 1rem;
+  font-size: .9rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -185,4 +188,19 @@ a:hover{
 
 hr {
   border: .1rem solid rgb(83, 83, 83);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-dua {
+    margin-top: 20px;
+  }
 }
