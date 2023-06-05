@@ -15,16 +15,18 @@
       <a class="margin-right">Gmail</a>
       <a class="margin-right">Images</a>
       <div class="apps margin-right"><i class="material-icons">apps</i></div>
-      <div class="image margin-right"><i class="material-icons ">person</i></div>
+      <div class="image margin-right"><i class="material-icons">person</i></div>
+      <div class="apps margin-right" id="lightBtn" onclick="setLightMode()"><i class="material-icons ">brightness_2</i></div>
     </div>
   </header>
   
   <section>
   <div class="container">
-    <h1><span class="font-g">G</span>oogl<span class="font-e">e</span></h1>
+    <h1>
+      <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
     <div class="search-bar">
       <i class="material-icons">search</i>
-      <input type="search" id="searchInput" required>
+      <input type="search" id="searchInput" onkeydown="handleKeyPress(event)">
       <i class="material-icons">photo_camera</i>
     </div>
     <div class="button-search">

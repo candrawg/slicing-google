@@ -28,6 +28,11 @@ header {
   font-size: .8rem;
 }
 
+.wrap a,
+.wrap div {
+  cursor: pointer;
+}
+
 .margin-right {
   margin-right: 10px;
 }
@@ -59,6 +64,7 @@ header {
   border-radius: 100%;
 }
 
+
 .container {
   height: 100%;
   width: 100%;
@@ -72,17 +78,16 @@ header {
   font-size: 5rem;
   font-weight: 600;
   letter-spacing: -3px;
+  color: white;
 }
 
-.font-g {
-  font-size: 6rem;
+h1 span:nth-child(1) {
+  font-size: 5.5rem;
 }
-
-.font-e {
+h1 span:nth-child(6) {
   display: inline-block;
   transform: rotate(-15deg);
 }
-
 .search-bar {
   height: 45px;
   width: 580px;
@@ -187,7 +192,79 @@ a:hover{
 }
 
 hr {
-  border: .1rem solid rgb(83, 83, 83);
+  border: 1px solid #252525;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #fff;
+  color: #505050;
+}
+.light-mode .image {
+  background-color: #202124;
+  color: #ebebeb;
+}
+
+.light-mode .wrap .apps:hover {
+  background-color: #ebebec;
+}
+
+.light-mode h1 span:nth-child(1),
+.light-mode h1 span:nth-child(4) {
+  color: #4285f4;
+}
+
+.light-mode h1 span:nth-child(2),
+.light-mode h1 span:nth-child(6) {
+  color: #ea4335;
+}
+
+.light-mode h1 span:nth-child(3) {
+  color: #fbbc05;
+}
+
+.light-mode h1 span:nth-child(5) {
+  color: #34a853;
+}
+
+.light-mode .search-bar {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.light-mode .search-bar:hover {
+  box-shadow: 0px 0px 3px 3px rgba(214, 214, 214, 0.3);
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(214, 214, 214, 0.3);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(214, 214, 214, 0.3);
+}
+
+.light-mode .search-bar input{
+  color: #171717;
+}
+
+.light-mode button {
+  background-color: #f2f2f2;
+  color: #303134;
+}
+
+.light-mode button:hover {
+  outline: none;
+  box-shadow: 0px 0px 1px 1px rgba(82, 82, 82, 0.3);
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(82, 82, 82, 0.3);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(82, 82, 82, 0.3);
+}
+
+.light-mode button:active {
+  outline: 1px solid #4285f4;
+}
+
+.light-mode footer {
+  background-color: #f2f2f2;
+  color: gray;
+}
+
+.light-mode hr {
+  border: 1px solid #e6e5e5;
 }
 
 @media (max-width: 768px) {
