@@ -90,7 +90,7 @@ h1 span:nth-child(6) {
 }
 .search-bar {
   height: 45px;
-  width: 580px;
+  width: 90%;
   border-radius: 100px;
   border: 1px solid dimgray;
   background-color: #202124;
@@ -267,15 +267,55 @@ hr {
   border: 1px solid #e6e5e5;
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
+@media (max-width: 360px) {
+  /* .search-bar {
+      height: 45px;
+      width: 300px;
+  } */
+
+  .container h1 {
+    font-size: 4rem;
+  }
+
+  h1 span:nth-child(1) {
+    font-size: 4.5rem;
+  }
+
+  .wrap {
+    font-size: .7rem;
+  }
+
+  .apps {
+    height: 35px;
+    width: 35px;
+  }
+
+  .image {
+    height: 27px;
+    width: 27px;
+  }
+
+  .search-bar input {
+    font-size: .9rem;
+    margin-left: 5px;
+  }
+
+  .container button {
+    height: 30px;
+    width: 140px;
+    font-size: .8rem;
+    line-height: 30px;
+  }
+
+  .container article {
+    font-size: .7rem;
   }
   
   .footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: .75rem;
   }
   .footer-dua {
     margin-top: 20px;
