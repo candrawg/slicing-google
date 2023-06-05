@@ -90,7 +90,7 @@ h1 span:nth-child(6) {
 }
 .search-bar {
   height: 45px;
-  width: 90%;
+  width: 580px;
   border-radius: 100px;
   border: 1px solid dimgray;
   background-color: #202124;
@@ -268,10 +268,12 @@ hr {
 }
 
 @media (max-width: 360px) {
-  /* .search-bar {
-      height: 45px;
-      width: 300px;
-  } */
+  
+  
+  .search-bar {
+      height: 35px;
+      width: 90%;
+  }
 
   .container h1 {
     font-size: 4rem;
@@ -283,6 +285,9 @@ hr {
 
   .wrap {
     font-size: .7rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
   }
 
   .apps {
